@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make your Notes</title>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Create Your Notes Here ..!!</h1>
+      <p id="ts">by Prince Parwat</p>
+    </div>
+
+    <div id="form">
+      <form id="inputForm">
+        <input
+          type="text"
+          name="title"
+          id="new-note-title-input"
+          class="inputText"
+          placeholder="Title"
+          autocomplete="off"
+          required
+          autofocus
+        />
+
+        <input
+        type="text"
+        name="content"
+        id="new-note-body-input"
+        class="inputText"
+        placeholder="Content"
+        autocomplete="off"
+        required
+      />
+      
+      <button type='submit' class="btn">Create Notes</button>
+
+      </form>
+    </div>
+
+    <h3 id="no-notes">No notes found.. Please Add one..!!</h3>
+
+    <ul id='notes'>
+        <li>
+            <a href="#">
+                <h2>Some Notes</h2>
+                <button class="delete">X</button>
+                <p>Content of the Notes</p>
+            </a>
+        </li>
+    </ul>
+  </body>
+</html>
