@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cookies</title>
+    <script>
+        function clicked(){
+            console.log("Button");
+            // now here we are going to store data in local strorage
+            let key = document.myForm.name1.value;
+            let value = document.myForm.name2.value;
+            localStorage.setItem(key, value);
+
+            //---------- now here we are goin to delete the item from local stoarge 
+            // localStorage.removeItem('color');
+            //---------- now here we are goin to get the item/data from local stoarge
+            // localStorage.getItem('age');
+        }
+    </script>
+</head>
+<body>
+  <form name="myForm">
+      Enter Key Info : <input type="text" name='name1' />
+      Enter Value Info : <input type="text" name='name2' />
+      <input type="button" value='submit' onclick="clicked()" />
+  </form>  
+</body>
+</html>

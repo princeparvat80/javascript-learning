@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Alert Box</title>
+</head>
+<body>
+<h1>Type of  Alert box </h1>
+    <script>
+        function demo() { 
+            // ----------------1st way to write the alert box
+            alert('Press -ok- if you want to check this alert box?');
+        }
+
+        function demo1(){
+            // ---------------2nd way to write teh alert box
+            const test = confirm( 'Are you sure ?')
+            if(test==true){
+                alert('yes')
+            }
+            else{
+                alert('no')
+            }
+
+        }
+
+        function demo2(){
+             // --------------------3rd way to write the alert box
+             const takeinput = prompt('Enter your favrt number..')
+            document.write('Your fvrt number is : ' + takeinput)
+        }
+    </script>
+    <input type="button" onclick="demo()" value="Open Normal Alert box"><br />
+    <input type="button" onclick="demo1()" value="Open Confirmation Alert box"><br />
+    <input type="button" onclick="demo2()" value="Take input alert box">
+</body>
+</html>
